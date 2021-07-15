@@ -27,9 +27,6 @@ void my_putchar(char c) //Here we recieve the char to write on the output
 }
 ```
 
-If we write the address on the stdout you'll get somthing like this
-
-
 ## How to use pointers
 
 This is how to declare a pointer in C
