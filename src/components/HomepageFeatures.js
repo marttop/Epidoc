@@ -28,7 +28,7 @@ const FeatureList = [
   {
     linkTitle: '',
     link: '',
-    title: 'Focus on What Matters',
+    title: 'Focus on what matters',
     description: (
       <>
         Epidoc lets you focus on what really matters.
