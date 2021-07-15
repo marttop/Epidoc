@@ -4,6 +4,8 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
+    linkTitle: '',
+    link: '',
     title: 'Easy to Use',
     description: (
       <>
@@ -13,29 +15,36 @@ const FeatureList = [
     ),
   },
   {
-    title: '',
+    linkTitle: 'Contribute here!',
+    link: 'http://github.com/marttop/Epidoc',
+    title: 'Open source',
     description: (
       <>
+        This documentation is open source!
+        Feel free to contribute documentation.
       </>
     ),
   },
   {
+    linkTitle: '',
+    link: '',
     title: 'Focus on What Matters',
     description: (
       <>
-        Epidoc lets you focus on what really matters. Try it out and
-        feel free to contribute
+        Epidoc lets you focus on what really matters.
+        Easy to read documentation for beginners
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({title, description, link, linkTitle}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
         <p>{description}</p>
+        <a href={link}>{linkTitle}</a>
       </div>
     </div>
   );
