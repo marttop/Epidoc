@@ -39,3 +39,19 @@ type *name;
 //An example pointer "ptr" that will hold an interger value
 int *ptr;
 ```
+
+Let's take an example.
+```c
+int value = 5; //We declare an integer that equals 5.
+int *ptr = NULL; //We declare a pointer to NULL.
+
+ptr = &c; //Here the address of 'value' is assigned to the 'ptr' pointer.
+```
+To access the value stored in the address we use the unary operator (*) that returns the value of the variable located at the address specified by its operand. This is also called "Dereferencing"
+```c
+int value = 5;
+int *ptr = NULL;
+ptr = &c;
+printf("%d\n", ptr); //Here we'll have the raw value of the pointer "hexa address"
+printf("%d\n", *ptr); //Here we are dereferencing the pointer so it will print "5"
+```
