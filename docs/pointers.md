@@ -52,3 +52,21 @@ ptr = &c;
 printf("%d\n", ptr); //Here we'll have the raw value of the pointer "hexa address"
 printf("%d\n", *ptr); //Here we are dereferencing the pointer so it will print "5"
 ```
+
+## NULL pointers
+
+It is a good practice to assign a NULL value to a pointer variable in case you do not have an exact address to be assigned. This is done at the time of variable declaration.
+It is important for example when you want to know if a pointer is asigned to a value or not.
+If you check a non asigned value your program may crash.
+
+The NULL pointer is a constant with a value of zero defined in several standard libraries.
+To check for a null pointer, you can use an 'if' statement as follows
+```c
+int *ptr = NULL;
+if (ptr) //Check if the ptr is asigned.
+if (!ptr) //Check if the ptr is NULL.
+```
+
+## Why to use pointers.
+
+A pointer is an address towards a memory segment.
